@@ -1,0 +1,206 @@
+@import url('stylesheets/reset.css');
+@import url('stylesheets/less/grid.less');
+
+/***** COULEURS */
+@accent: #009847;
+
+
+body {
+	font-family: 'Helvetica Neue', 'Droid Sans', sans-serif;
+	background: url('images/bg.jpg') repeat #000;
+}
+
+/***** MIXINS */
+.gradient (@origin: left, @start: white, @stop: black) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+	   
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@start, endColorstr=@stop); /* IE6 & IE7 */  
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@start, endColorstr=@stop); /* IE8+ */  
+	background: linear-gradient(@start, @stop); /* the standard */  
+}
+
+.clear {
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+	clear: both;
+	height: 1px;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden() {
+	border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;
+	&.focusable:active, &.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+.c1, .c2, .c3, .c4, .c5, .c6, .c7 {
+  margin: 0 0.8403%;
+  float: left;
+  display: block;
+
+ // box-shadow: 0px 0px 0px 1px red;
+  //margin-bottom: 10px;
+
+  &.first {
+  	margin-left: 0;
+  }
+
+}
+
+a { text-decoration: none; }
+
+.c1 { width: 12.60%; }
+.c2 { width: 26.89%; }
+.c3 { width: 41.17%; }
+.c4 { width: 55.46%; }
+.c5 { width: 69.74%; } 
+.c6 { width: 84.03%; }
+.c7 { width: 98.31%; }
+
+.fr { float: right; }
+.fl { float: left; }
+.fn { float: none; }
+.cb { clear: both; }
+.oh { overflow: hidden; }
+.aligncenter { text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Enriqueta, Georgia, Serif;
+	color: #fff;
+	font-weight: 700;
+}
+
+.bt-rose(@size:inline-block) {
+	background-color: #ff6163;
+	text-align: center;
+	padding: 0.5em;
+	color: #fff;
+	font-family: Enriqueta, Georgia, Serif;
+	font-size: 1em;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	display: @size;
+
+}
+
+.bt-rose {
+	.bt-rose();
+}
+
+.container {
+	width: 1190px;
+}
+
+#page {
+
+	#sidebar {
+		//background-color: #fff;
+		background-color: rgba(255,255,255,0.15);
+		color: #fff;
+
+		.wrapper {
+			clear: both;
+			overflow: hidden;
+			border-top: 2px solid #000;
+
+			&:first-child { border-top: none; }
+
+			&.en-tete-aside {
+
+				header {
+					overflow: hidden;
+					vertical-align: bottom;
+
+					h1 {
+						
+					}
+				}
+				
+
+				.bt-rose { 
+					margin-top: 3em;
+					clear: both;
+					.bt-rose(block); 
+				}
+			}
+		}
+	}
+
+	#content {
+		//background-color: pink;
+
+		h1 {
+			width: 100%;
+			padding-bottom: 1em;
+			text-align: center;
+			background: url('images/hr.png') repeat-x bottom;
+		}
+
+	}
+
+	p {
+		
+	}
+}
+
+.wrapper {
+	padding: 0.9375em;
+} 
+
+
+#footer {
+	clear: both;
+	overflow: hidden;
+	background-color: #000;
+	border-top: thin solid #252525;
+	font-family: Enriqueta, Georgia, Serif;
+	font-size: 1em;
+	color: #fff;
+
+	.c-tier {
+		width: 31%;
+	}
+
+	h3 {
+		font-weight: 700;
+		font-size: 1.5em;
+		padding-bottom: 0.625em;
+	}
+
+	ul li { padding-bottom: 0.625em; }
+
+	a {
+		color: #fff;
+		&.bt-rose { .bt-rose(block); }
+	}
+
+	input[type="email"] {
+		border-radius: 8px;
+		border: none;
+		background: #fff;
+		padding: 1em;
+	}
+
+	input[type="submit"] {
+
+	}
+
+}
+
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 99.16%;
+	}
+}
+

@@ -1,0 +1,219 @@
+@import url('stylesheets/reset.css');
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/***** COULEURS */
+body {
+  font-family: 'Helvetica Neue', 'Droid Sans', sans-serif;
+  background: url('images/bg.jpg') repeat #000000;
+}
+/***** MIXINS */
+.clear {
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  clear: both;
+  height: 1px;
+}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7 {
+  margin: 0 0.8403%;
+  float: left;
+  display: block;
+}
+.c1.first,
+.c2.first,
+.c3.first,
+.c4.first,
+.c5.first,
+.c6.first,
+.c7.first {
+  margin-left: 0;
+}
+a {
+  text-decoration: none;
+}
+.c1 {
+  width: 12.60%;
+}
+.c2 {
+  width: 26.89%;
+}
+.c3 {
+  width: 41.17%;
+}
+.c4 {
+  width: 55.46%;
+}
+.c5 {
+  width: 69.74%;
+}
+.c6 {
+  width: 84.03%;
+}
+.c7 {
+  width: 98.31%;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fn {
+  float: none;
+}
+.cb {
+  clear: both;
+}
+.oh {
+  overflow: hidden;
+}
+.aligncenter {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Enriqueta, Georgia, Serif;
+  color: #fff;
+  font-weight: 700;
+}
+.bt-rose {
+  background-color: #ff6163;
+  text-align: center;
+  padding: 0.5em;
+  color: #fff;
+  font-family: Enriqueta, Georgia, Serif;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  display: inline-block;
+}
+.container {
+  width: 1190px;
+}
+#page #sidebar {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+#page #sidebar .wrapper {
+  clear: both;
+  overflow: hidden;
+  border-top: 2px solid #000;
+}
+#page #sidebar .wrapper:first-child {
+  border-top: none;
+}
+#page #sidebar .wrapper.en-tete-aside header {
+  overflow: hidden;
+  vertical-align: bottom;
+}
+#page #sidebar .wrapper.en-tete-aside .bt-rose {
+  margin-top: 3em;
+  clear: both;
+  background-color: #ff6163;
+  text-align: center;
+  padding: 0.5em;
+  color: #fff;
+  font-family: Enriqueta, Georgia, Serif;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  display: block;
+}
+#page #content h1 {
+  width: 100%;
+  padding-bottom: 1em;
+  text-align: center;
+  background: url('images/hr.png') repeat-x bottom;
+}
+.wrapper {
+  padding: 0.9375em;
+}
+#footer {
+  clear: both;
+  overflow: hidden;
+  background-color: #000;
+  border-top: thin solid #252525;
+  font-family: Enriqueta, Georgia, Serif;
+  font-size: 1em;
+  color: #fff;
+}
+#footer .c-tier {
+  width: 31%;
+}
+#footer h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+  padding-bottom: 0.625em;
+}
+#footer ul li {
+  padding-bottom: 0.625em;
+}
+#footer a {
+  color: #fff;
+}
+#footer a.bt-rose {
+  background-color: #ff6163;
+  text-align: center;
+  padding: 0.5em;
+  color: #fff;
+  font-family: Enriqueta, Georgia, Serif;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  display: block;
+}
+#footer input[type="email"] {
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  padding: 1em;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 99.16%;
+  }
+}
