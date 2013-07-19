@@ -34,17 +34,8 @@
 
 		<section class="wrapper">
 
-			<h2>Connectez-vous</h2>
-
-			<form method='get' accept-charset='UTF-8' name='oi_form' action='#'>
-				<label for="email" class="visuallyhidden">Courriel</label> 
-				<input type='email' name='email' placeholder="Votre courriel" />
-				<input class="bt-rose fr" type='submit' value="Connexion" />
-			</form>
-
-			<a class="fbconnect" href="#" title="Me connecter via Facebook">Me connecter via Facebook</a>
-			<a class="gmailconnect" href="#" title="Me connecter via Gmail">Me connecter via Gmail</a>
-
+			
+			
 		</section>
 
 		<section class="wrapper">
@@ -61,9 +52,9 @@
 
 	</aside>
 
-	<header>
+	<header class="banner">
 
-		<img src="http://placehold.it/830x246">
+		<img class="entreprise-banner" src="http://placehold.it/830x246">
 		<div class="vignette">
 			
 			<img title="Evollia" src="http://placehold.it/180x180">
@@ -98,6 +89,7 @@
 								<span class="index"><strong>1</strong></span>
 								<img src="http://placehold.it/50x50">
 								<strong class="title">Frédéric Bolduc</strong>
+								<span class="time">Evollia</span>
 							</div>
 							<div class="c2 don-moyen">
 								<strong>68 $</strong>
@@ -110,6 +102,7 @@
 								<span class="index"><strong>1</strong></span>
 								<img src="http://placehold.it/50x50">
 								<strong class="title">Frédéric Bolduc</strong>
+								<span class="time">Evollia</span>
 							</div>
 							<div class="c2 don-moyen">
 								<strong>68 $</strong>

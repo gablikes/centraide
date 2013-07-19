@@ -269,6 +269,40 @@ h6 {
   padding-right: 2%;
   margin-right: 2%;
 }
+#page header.banner {
+  float: left;
+  margin-bottom: -50px;
+}
+#page header.banner img.entreprise-banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: -90px;
+  position: relative;
+  z-index: 0;
+}
+#page header.banner .vignette {
+  margin-left: 2%;
+  position: relative;
+  z-index: 1;
+}
+#page .vignette img {
+  float: left;
+  margin-right: 4%;
+  border-radius: 50%;
+  border: thin solid #fff;
+  box-shadow: 0px 0px 0px 1px #ff686a;
+}
+#page .vignette .title {
+  padding-top: 10px;
+  padding-bottom: 2px;
+  display: block;
+  color: #e11e2f;
+  font-size: 1em;
+}
+#page .vignette .time {
+  color: #cccccc;
+  font-size: 0.875em;
+}
 #page #content {
   width: 70%;
   margin-left: 2%;
@@ -293,25 +327,6 @@ h6 {
 #page #content .news.double li {
   width: 50%;
   float: left;
-}
-#page #content .vignette img {
-  float: left;
-  margin-right: 4%;
-  border-radius: 50%;
-  border: thin solid #fff;
-  box-shadow: 0px 0px 0px 1px #ff686a;
-}
-#page #content .vignette .title {
-  padding-top: 10px;
-  padding-bottom: 2px;
-  display: block;
-  color: #e11e2f;
-  font-size: 1em;
-}
-#page #content .vignette .time {
-  text-transform: lowercase;
-  color: #cccccc;
-  font-size: 0.875em;
 }
 #page .loader {
   text-align: center;
@@ -347,6 +362,7 @@ h6 {
   font-weight: 700;
   font-size: 1.5em;
   padding-bottom: 0.625em;
+  text-align: left;
 }
 #footer ul li {
   padding-bottom: 0.625em;
@@ -464,7 +480,7 @@ form input[type="submit"] {
 .ui-tabs .ui-tabs-panel {
   display: block;
   border-width: 0;
-  padding: 1em 1.4em;
+  padding: 1em 0;
   background: none;
   background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
@@ -475,7 +491,18 @@ form input[type="submit"] {
 .table li,
 .table .row {
   clear: both;
-  margin-bottom: 20px;
+  padding: 0.75em 0;
+}
+.table li,
+.table .row,
+.table li .c3.entreprise,
+.table .row .c3.entreprise,
+.table li .c4.entreprise,
+.table .row .c4.entreprise {
+  -webkit-transition: all 0.05s ease;
+  -moz-transition: all 0.05s ease;
+  -o-transition: all 0.05s ease;
+  transition: all 0.05s ease;
 }
 .table li .don-moyen,
 .table .row .don-moyen,
@@ -498,6 +525,17 @@ form input[type="submit"] {
 .table .row .index {
   float: left;
   width: 40px;
+}
+.table li:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.table li:hover .c3.entreprise {
+  padding-left: 1%;
+  width: 47.03%;
+}
+.table li:hover .c4.entreprise {
+  padding-left: 1%;
+  width: 63.7%;
 }
 .table .header {
   color: #ccc;
