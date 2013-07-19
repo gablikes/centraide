@@ -43,6 +43,17 @@ body {
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
+.c1, .c2, .c3, .c4, .c5, .c6 {
+  margin: 0 0.8403%;
+  float: left;
+  display: block;
+
+  &.first {
+  	margin-left: 0;
+  }
+
+}
+
 .c1,.c2,.c3,.c4,.c5,.c6{ 
 	margin:0 0.98039%; 
 	display: block;
@@ -55,12 +66,35 @@ body {
 .c5 { width:81.37%; }
 .c6 { width:98.03%; }
 
+.c-demi {
+	width: 48.31%;
+	margin: 0 0.8403%;
+	float: left;
+}
+
+.c-tier {
+	width: 31.31%;
+	margin: 0 0.8403%;
+	float: left;
+} 
+
+#sidebar {
+	width: 26.89%;
+}
+
 a { 
 	text-decoration: none; 
 	&:focus { outline: none; }
 }
 strong { font-weight: bolder; }
 em { font-style: italic; }
+
+.c1 { width: 12.60%; }
+.c2 { width: 26.89%; }
+.c3 { width: 41.17%; }
+.c4 { width: 55.46%; }
+.c5 { width: 69.74%; } 
+.c6 { width: 84.03%; }
 
 .fr { float: right; }
 .fl { float: left; }
@@ -73,7 +107,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: @serif;
 	color: #fff;
 	font-weight: 700;
-	text-align: center;
 }
 
 .bt-rose(@size:inline-block) {
@@ -101,10 +134,10 @@ h1, h2, h3, h4, h5, h6 {
 #page {
 
 	#sidebar {
-		width: 28%;
-		float: left;
 		background-color: rgba(255,255,255,0.15);
 		color: #fff;
+		width: 26.89%;
+		margin-right: 0 0.8403%;
 
 		.wrapper {
 			clear: both;
@@ -123,7 +156,6 @@ h1, h2, h3, h4, h5, h6 {
 
 					h1 {	
 						position: absolute;
-						text-align: left;
 						width: 60%;
 						font-size: 1.1875em;
 						bottom: 10px;
@@ -141,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 
 			h2 {
 				font-size: 1.125em;
+				text-align: center;
 				padding-bottom: 0.625em;
 			}
 
@@ -195,9 +228,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#content {
-		width: 70%;
-		margin-left: 2%;
-		float: left;
+		width: 69.74%;
+		margin-left: 0;
 		padding-top: 5.65em;
 
 		section {
@@ -208,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 		h2 {
 			width: 100%;
 			padding-bottom: 0.5em;
+			text-align: center;
 			background: url('images/hr.png') repeat-x bottom;
 			font-size: 1.5em;
 			margin-bottom: 1.66em;
@@ -215,20 +248,17 @@ h1, h2, h3, h4, h5, h6 {
 
 		.news {
 			li {  
-				overflow: hidden;
-				padding-bottom: 15px;
-			}
-
-			&.double li {
-				width: 50%;
 				float: left;
+				overflow: hidden;
+				width: 50%;
+				padding-bottom: 15px;
 			}
 		}
 		.vignette {
 				img {
 					float: left;
 					margin-right: 4%;
-					border-radius: 50%;
+					border-radius: 50px;
 					border: thin solid #fff;
 					box-shadow: 0px 0px 0px 1px #ff686a;
 				}
@@ -417,32 +447,47 @@ form {
 
 .table {
 	overflow: hidden;
-	
-	li,
 	.row {
 		clear: both;
 		margin-bottom: 20px;
+		//overflow: hidden;
 
-		.don-moyen,
-		.totale,
-		.index { 
-			text-align: center;
-			strong {
-				font-size: 1.5em;
-				line-height: 50px;
-			}
+		.cell {
+			float: left;
 		}
 
-		.index {
-			float: left;
-			width: 40px;
+		
+		.index { 
+			width: 5%; 
+			font-weight: 700;
+			font-size: 1.5em;
+			text-align: center;
+			padding-top: 15px;
+		}
+
+		.division { width: 42%; }
+		.entreprise { width: 37%; }
+
+		.don-moyen,
+		.totale { 
+			width: 22%; 
+			text-align: center;
+			font-size: 1.5em;
+			font-weight: 700;
+		}
+
+		.suivie {
+			width: 13%;
 		}
 	}
 
 	.header {
-		color: #ccc;
-		font-weight: normal;
-		font-size: 0.875em; 
+		
+		.don-moyen, .totale { 
+			color: #ccc;
+			font-weight: normal;
+			font-size: 0.875em; 
+		}
 	}
 }
 
@@ -455,16 +500,7 @@ form {
 	padding: 0.5em;
 	border-radius: 8px;
 	border: thin solid #535353;
-	margin-top: 8px;
 
-	-webkit-transition: all 0.1s ease;
-	-moz-transition: all 0.1s ease;
-	-o-transition: all 0.1s ease;
-	transition: all 0.1s ease;
-
-	&:hover {
-		box-shadow: inset 0px 0px 5px 2px rgba(255, 255, 255, 0.1);
-	}
 
 	&.select {
 		background-color: #666;
@@ -717,8 +753,19 @@ form {
 		width: 99.16%;
 	}
 
+	/*#sidebar {
+		width: 320px;
+	}
+
+	#content {
+		width: -webkit-calc(100% - 320px);
+	} */
+
 
 }
+
+
+
 
 #thermo {
 	width: 50px;
