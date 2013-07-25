@@ -6,6 +6,8 @@
 	<title>Mon site</title>
 	<link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700|Asap:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -78,6 +80,8 @@
 
 				<ul class="resp-tabs-list">
 					<li>Meilleurs donateurs</li>
+					<li>Mes collègues</li>
+					<li>Mes amis</li>
 				</ul>
 
 				<div class="table resp-tabs-container">
@@ -116,8 +120,16 @@
 						</ol>
 
 					</div>
+					<div class="table">
+						yeah
+					</div>
+
+					<div class="table">
+						encore
+					</div>
 
 				</div>
+
 
 			</div>
 

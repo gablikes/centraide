@@ -36,7 +36,7 @@
 
 			<h2>Connectez-vous</h2>
 
-			<form method='get' accept-charset='UTF-8' name='oi_form' action='#'>
+			<form method='get' accept-charset='UTF-8' name='oi_form' action='#' class="fConnection">
 				<label for="email" class="visuallyhidden">Courriel</label> 
 				<input type='email' name='email' placeholder="Votre courriel" />
 				<input class="bt-rose fr" type='submit' value="Connexion" />
@@ -104,136 +104,140 @@
 
 			<div id="tabs">
 
-				<ul>
-					<li><a href="#tabs-1">Toutes les entreprises</a></li>
-					<li><a href="#tabs-2">Meilleurs donateurs</a></li>
+				<ul class="resp-tabs-list">
+					<li>Toutes les entreprises</li>
+					<li>Meilleurs donateurs</li>
 				</ul>
 
-				<div id="tabs-1" class="table">
+				<div class="table resp-tabs-container">
 
-					<div class="row header">
+					<div>
 
-						<div class="c3 division">
-							<select>
-								<option value="0">Choisir une division</option>
-								<option value="1">Blablabla</option>
-								<option value="2">En ouin ? ayoye</option>
-								<option value="3">Yesesir</option>
-							</select>
+						<div class="row header">
+
+							<div class="c3 division">
+								<select>
+									<option value="0">Choisir une division</option>
+									<option value="1">Blablabla</option>
+									<option value="2">En ouin ? ayoye</option>
+									<option value="3">Yesesir</option>
+								</select>
+							</div>
+							<div class="c1 don-moyen">
+								Don moyen par contributeur
+							</div>
+							<div class="c1 totale">
+								Contribution totale
+							</div>
+							<hr class="clear">
+
 						</div>
-						<div class="c1 don-moyen">
-							Don moyen par contributeur
-						</div>
-						<div class="c1 totale">
-							Contribution totale
-						</div>
-						<hr class="clear">
+
+						<ol class="content">
+
+							<li>
+								<div class="c3 entreprise vignette">
+									<span class="index"><strong>1</strong></span>
+									<img src="http://placehold.it/50x50">
+									<strong class="title">Frédéric Bolduc</strong>
+								</div>
+								<div class="c1 don-moyen">
+									<strong>68 $</strong>
+								</div>
+								<div class="c1 totale">
+									<strong>4321 $</strong>
+								</div>
+								<div class="c1 suivie">
+									<span><a href="#" class="bt-suivie">Suivre</a></span>
+								</div>
+								<hr class="clear">
+							</li>
+
+							<li>
+								<div class="c3 entreprise vignette">
+									<span class="index"><strong>1</strong></span>
+									<img src="http://placehold.it/50x50">
+									<strong class="title">Frédéric Bolduc</strong>
+								</div>
+								<div class="c1 don-moyen">
+									<strong>68 $</strong>
+								</div>
+								<div class="c1 totale">
+									<strong>4321 $</strong>
+								</div>
+								<div class="c1 suivie">
+									<span><a href="#" class="bt-suivie select">Suivre</a></span>
+								</div>
+								<hr class="clear">
+							</li>
+
+						</ol>
 
 					</div>
 
-					<ol class="content">
 
-						<li>
-							<div class="c3 entreprise vignette">
-								<span class="index"><strong>1</strong></span>
-								<img src="http://placehold.it/50x50">
-								<strong class="title">Frédéric Bolduc</strong>
+					<div>
+
+						<div class="row header">
+
+							<div class="c3 division">
+								<select>
+									<option value="0">Choisir une division</option>
+									<option value="1">Blablabla</option>
+									<option value="2">En ouin ? ayoye</option>
+									<option value="3">Yesesir</option>
+								</select>
 							</div>
 							<div class="c1 don-moyen">
-								<strong>68 $</strong>
+								Don moyen par contributeur
 							</div>
 							<div class="c1 totale">
-								<strong>4321 $</strong>
-							</div>
-							<div class="c1 suivie">
-								<span><a href="#" class="bt-suivie">Suivre</a></span>
+								Contribution totale
 							</div>
 							<hr class="clear">
-						</li>
 
-						<li>
-							<div class="c3 entreprise vignette">
-								<span class="index"><strong>1</strong></span>
-								<img src="http://placehold.it/50x50">
-								<strong class="title">Frédéric Bolduc</strong>
-							</div>
-							<div class="c1 don-moyen">
-								<strong>68 $</strong>
-							</div>
-							<div class="c1 totale">
-								<strong>4321 $</strong>
-							</div>
-							<div class="c1 suivie">
-								<span><a href="#" class="bt-suivie select">Suivre</a></span>
-							</div>
-							<hr class="clear">
-						</li>
-
-					</ol>
-
-				</div>
-
-				<div id="tabs-2" class="table">
-
-					<div class="row header">
-
-						<div class="c3 division">
-							<select>
-								<option value="0">Choisir une division</option>
-								<option value="1">Blablabla</option>
-								<option value="2">En ouin ? ayoye</option>
-								<option value="3">Yesesir</option>
-							</select>
 						</div>
-						<div class="c1 don-moyen">
-							Don moyen par contributeur
-						</div>
-						<div class="c1 totale">
-							Contribution totale
-						</div>
-						<hr class="clear">
+
+						<ol>
+							<li>
+								<div class="c3 entreprise vignette">
+									<span class="index">1</span>
+									<img src="http://placehold.it/50x50">
+									<strong class="title">Frédéric Bolduc</strong>
+								</div>
+								<div class="c1 don-moyen">
+									<strong>68 $</strong>
+								</div>
+								<div class="c1 totale">
+									<strong>4321 $</strong>
+								</div>
+								<div class="c1 suivie">
+									<span><a href="#" class="bt-suivie">Suivre</a></span>
+								</div>
+								<hr class="clear">
+							</li>
+
+							<li>
+								<div class="c3 entreprise vignette">
+									<span class="index">1</span>
+									<img src="http://placehold.it/50x50">
+									<strong class="title">Frédéric Bolduc</strong>
+								</div>
+								<div class="c1 don-moyen">
+									<strong>68 $</strong>
+								</div>
+								<div class="c1 totale">
+									<strong>4321 $</strong>
+								</div>
+								<div class="c1 suivie">
+									<span><a href="#" class="bt-suivie select">Suivre</a></span>
+								</div>
+								<hr class="clear">
+							</li>
+
+						</ol>
 
 					</div>
-
-					<ol>
-						<li>
-							<div class="c3 entreprise vignette">
-								<span class="index">1</span>
-								<img src="http://placehold.it/50x50">
-								<strong class="title">Frédéric Bolduc</strong>
-							</div>
-							<div class="c1 don-moyen">
-								<strong>68 $</strong>
-							</div>
-							<div class="c1 totale">
-								<strong>4321 $</strong>
-							</div>
-							<div class="c1 suivie">
-								<span><a href="#" class="bt-suivie">Suivre</a></span>
-							</div>
-							<hr class="clear">
-						</li>
-
-						<li>
-							<div class="c3 entreprise vignette">
-								<span class="index">1</span>
-								<img src="http://placehold.it/50x50">
-								<strong class="title">Frédéric Bolduc</strong>
-							</div>
-							<div class="c1 don-moyen">
-								<strong>68 $</strong>
-							</div>
-							<div class="c1 totale">
-								<strong>4321 $</strong>
-							</div>
-							<div class="c1 suivie">
-								<span><a href="#" class="bt-suivie select">Suivre</a></span>
-							</div>
-							<hr class="clear">
-						</li>
-
-					</ol>
-
 
 				</div>
 

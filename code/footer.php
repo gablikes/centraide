@@ -38,7 +38,7 @@
 
 					<h3>Restez informé</h3>
 
-					<form method='get' accept-charset='UTF-8' name='oi_form' action='http://suivi.lnk01.com/oi/1/313ec887ff3c03ff28d05a203e8eaec1'>
+					<form method='get' accept-charset='UTF-8' name='oi_form' class="fConnection" action='http://suivi.lnk01.com/oi/1/313ec887ff3c03ff28d05a203e8eaec1'>
 						<label for="email" class="visuallyhidden">Courriel</label> 
 						<input type='email' name='email' placeholder="Votre courriel" />
 						<input type='hidden' name='goto' value='' />
@@ -80,5 +80,7 @@
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 	<script src="js/jquery.paginate.min.js"></script>
 	<script src='js/jquery.selectbox.min.js'></script>
+	<script src="js/jquery.easyResponsiveTabs.min.js"></script>
+	<script src="js/formToWizard.js"></script>
 	<script src="js/script.js"></script>
 </html>
